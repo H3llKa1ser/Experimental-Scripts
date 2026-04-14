@@ -18,4 +18,6 @@
 
     python3 csv2xlsx_parser.py -i csvparsed.csv -o workbook.xlsx
 
-    
+### 3) "Beautify" Excel document, making it easire to sort and edit data within it
+
+    python3 beautexcel.py workbook.xlsx
