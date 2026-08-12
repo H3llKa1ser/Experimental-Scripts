@@ -22,3 +22,4 @@
     Quantum Mechanics • Cyrus The Virus Vs Frequency Surfer
     Between Worlds • Temple Hedz
     No More Safi • Polycat
+    Friagram • Psychopod 1
