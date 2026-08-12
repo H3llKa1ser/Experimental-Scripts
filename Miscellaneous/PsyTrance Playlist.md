@@ -18,3 +18,4 @@
     Beginning • Gmo
     Stereo Bianco • Alien Project
     Transparent Future • Nada
+    Trance Fusion • Sirius Isness Feat. Isabelle M
