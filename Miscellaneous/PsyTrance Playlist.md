@@ -24,3 +24,4 @@
     No More Safi • Polycat
     Friagram • Psychopod 1
     The Gathering • Cyrus The Virus Vs Shanti Matkin
+    Pass Away • Abomination
