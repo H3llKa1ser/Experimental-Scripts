@@ -19,3 +19,4 @@
     Stereo Bianco • Alien Project
     Transparent Future • Nada
     Trance Fusion • Sirius Isness Feat. Isabelle M
+    Quantum Mechanics • Cyrus The Virus Vs Frequency Surfer
