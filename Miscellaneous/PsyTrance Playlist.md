@@ -17,3 +17,4 @@
     Vibrations • Sinewave
     Beginning • Gmo
     Stereo Bianco • Alien Project
+    Transparent Future • Nada
