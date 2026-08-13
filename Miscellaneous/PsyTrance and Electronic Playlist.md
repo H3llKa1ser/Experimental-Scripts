@@ -1,4 +1,4 @@
-# PsyTrance Playlist
+# PsyTrance / Electronic Playlist
 
     Industrialise • Jk Walker
     Deeper Emotions • Odiseo And Gandulk
