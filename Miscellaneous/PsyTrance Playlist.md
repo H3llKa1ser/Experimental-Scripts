@@ -27,3 +27,4 @@
     Pass Away • Abomination
     Liquid Troll • Chakra + Edi Mis
     Disruption • Zenmind
+    Artelligent • Headroom
