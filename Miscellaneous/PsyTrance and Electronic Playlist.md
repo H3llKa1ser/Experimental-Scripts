@@ -53,3 +53,4 @@
     X File • Chakra + Edi Mis
     Full Mona • Arkanoydz
     Mental Abduction • Zenmind
+    Upgrading System • Cosmo Tech
