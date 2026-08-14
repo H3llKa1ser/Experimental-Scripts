@@ -45,3 +45,4 @@
     Tabriz • Kaveh Azizi Pres. Rhythmia
     Shift • Electric Universe
     Make U Dance • Beat Hackers
+    Disco Dancer • Ananda Shake
