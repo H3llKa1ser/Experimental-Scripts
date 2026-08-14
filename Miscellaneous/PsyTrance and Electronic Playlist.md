@@ -54,3 +54,4 @@
     Full Mona • Arkanoydz
     Mental Abduction • Zenmind
     Upgrading System • Cosmo Tech
+    Psy Maroco • Sundose
