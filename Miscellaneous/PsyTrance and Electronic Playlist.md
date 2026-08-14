@@ -47,3 +47,4 @@
     Make U Dance • Beat Hackers
     Disco Dancer • Ananda Shake
     Mechanical • Indra
+    Can't Do That • Total Eclipse
