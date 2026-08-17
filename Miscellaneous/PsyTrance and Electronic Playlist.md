@@ -62,5 +62,6 @@
     De-classified • Eat Static
     Did You Hear Me • Red Light District
     Growling Machines • Growling Machines
+    Disco Slickers • The Mangler
     
     
