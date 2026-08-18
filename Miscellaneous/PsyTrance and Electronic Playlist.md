@@ -70,5 +70,6 @@
     Yellow Magnetic Star • Highko
     Alice In Wonderland • Injection
     Labspressure • Kularis
-    Zk-01 • Noise Gust Vs Far East Ghost    
+    Zk-01 • Noise Gust Vs Far East Ghost
+    Martian Blues • Cosmosis
     
