@@ -112,4 +112,5 @@
     Robots & Computers • Freedom Fighters
     Into The Light • Ovnimoon Feat Ane Gaby
     To Eternity • Mfg
+    Freak • Freaked Frequency
 
