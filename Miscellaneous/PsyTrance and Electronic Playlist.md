@@ -119,4 +119,5 @@
     Hidden Signs • Miditec
     Never Mind • Samadhi
     Tribal Emphasis • Screec
+    Slicer • Quantum
 
