@@ -121,4 +121,5 @@
     Tribal Emphasis • Screec
     Slicer • Quantum
     Elasto • Ouija + Mahasuka
+    Transparent Mind • Total Eclipse
 
