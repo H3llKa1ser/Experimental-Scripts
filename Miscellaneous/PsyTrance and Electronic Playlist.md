@@ -122,4 +122,5 @@
     Slicer • Quantum
     Elasto • Ouija + Mahasuka
     Transparent Mind • Total Eclipse
+    Menthol • Desperado
 
