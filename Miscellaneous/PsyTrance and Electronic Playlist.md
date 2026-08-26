@@ -120,4 +120,5 @@
     Never Mind • Samadhi
     Tribal Emphasis • Screec
     Slicer • Quantum
+    Elasto • Ouija + Mahasuka
 
