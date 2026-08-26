@@ -123,4 +123,5 @@
     Elasto • Ouija + Mahasuka
     Transparent Mind • Total Eclipse
     Menthol • Desperado
+    Vishuddi Chakra • Chakra
 
