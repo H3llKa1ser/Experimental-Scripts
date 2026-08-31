@@ -139,4 +139,5 @@
     Stranger Machine • Waio
     Down The Stairs • Azax Syndrom
     Hard Floor • Painkiller
+    Fine Sequence • Oddsono
 
