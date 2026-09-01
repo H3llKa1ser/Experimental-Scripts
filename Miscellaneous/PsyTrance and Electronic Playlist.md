@@ -13,7 +13,6 @@
     Broaden Our Mind • Purepressure
     Crystal Falls • Prosper
     Eternity • Tomoya Tachibana
-    Between Worlds • Temple Hedz
     Vibrations • Sinewave
     Beginning • Gmo
     Stereo Bianco • Alien Project
