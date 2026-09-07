@@ -2,6 +2,8 @@
 
 ### 1) Delete paywall elements in the page
 
+    Right-click on the element -> Inspect -> Delete Highlighted Element
+
 ### 2) Add scrolling functionality
 
 JS code:
