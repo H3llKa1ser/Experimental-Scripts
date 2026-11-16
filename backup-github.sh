@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # backup-github.sh — mirror all repos owned by H3llKa1ser
+# Run gh auth login and gh auth setup-git once, then bash backup-github.sh
 set -euo pipefail
 USER=H3llKa1ser
 DEST=~/github-backup
