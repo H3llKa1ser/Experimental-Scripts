@@ -10,3 +10,5 @@
     Harm Sweaty Pit · Nina Kraviz · Bara Nova
     Kill the Messenger · Rezodrone · The Cartesian Duelists · Jason Charles Miller · Jamison Boaz
     Reaktion · Rezodrone · Alexei Brayko · Jason Charles Miller · Jamison Boaz
+    With Her · Steven Richard Davis · Ego Affliction
+
