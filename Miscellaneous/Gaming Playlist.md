@@ -9,3 +9,4 @@
     Who's Ready for Tomorrow · RAT BOY · IBDY · Rat Boy
     Harm Sweaty Pit · Nina Kraviz · Bara Nova
     Kill the Messenger · Rezodrone · The Cartesian Duelists · Jason Charles Miller · Jamison Boaz
+    Reaktion · Rezodrone · Alexei Brayko · Jason Charles Miller · Jamison Boaz
