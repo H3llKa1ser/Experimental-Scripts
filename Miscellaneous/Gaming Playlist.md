@@ -12,5 +12,6 @@
     Reaktion · Rezodrone · Alexei Brayko · Jason Charles Miller · Jamison Boaz
     With Her · Steven Richard Davis · Ego Affliction
     Flying Heads · Kid Moxie · Ivan Iusco · Ashes Potts · Elena Charbila
+    Practical Heart · Bryan Aspey · Quantum Lovers
 
 
