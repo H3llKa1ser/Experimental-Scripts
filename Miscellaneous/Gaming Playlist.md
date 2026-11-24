@@ -13,5 +13,7 @@
     With Her · Steven Richard Davis · Ego Affliction
     Flying Heads · Kid Moxie · Ivan Iusco · Ashes Potts · Elena Charbila
     Practical Heart · Bryan Aspey · Quantum Lovers
+    Bigger Man (feat. Taelor Yung) · Konrad OldMoney · Droox · Taelor Yung · Konrad Abramowicz
+
 
 
