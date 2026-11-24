@@ -8,3 +8,4 @@
     I Really Want to Stay at Your House · Rosa Walton · Hallie Coggins
     Who's Ready for Tomorrow · RAT BOY · IBDY · Rat Boy
     Harm Sweaty Pit · Nina Kraviz · Bara Nova
+    Kill the Messenger · Rezodrone · The Cartesian Duelists · Jason Charles Miller · Jamison Boaz
