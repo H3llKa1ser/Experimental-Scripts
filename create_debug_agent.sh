@@ -2227,6 +2227,124 @@ def test_rejects_invalid_percent():
         apply_discount(10.0, 150)
 __EOF__
 
+emit GETTING_STARTED.md <<'__EOF__'
+# Getting started with debug-agent
+
+## 1. Prerequisites
+
+- Linux, macOS or WSL (the terminal tool uses a POSIX shell)
+- Python 3.11+ and git
+- An Anthropic API key
+- Optional: ripgrep (`rg`) for faster code search
+
+## 2. Install
+
+```bash
+cd debug-agent
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"      # dev extra adds pytest, ruff and mypy
+```
+
+Check the install:
+
+```bash
+debug-agent --version
+pytest                        # the agent's own tests; no API key needed
+```
+
+## 3. Configure credentials
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...
+export DEBUG_AGENT_MODEL=claude-sonnet-5-5    # optional; claude-opus-5-5 for harder bugs
+```
+
+The key stays in the agent process. Commands the agent runs get a scrubbed environment without it.
+
+## 4. Smoke test on the bundled buggy project
+
+`examples/buggy_project` has a real bug: the discount divides by 10 instead of 100.
+
+```bash
+cp -r examples/buggy_project /tmp/buggy && cd /tmp/buggy
+git init -q && git add -A
+git -c user.name=demo -c user.email=demo@example.com commit -qm init
+debug-agent run --test "python -m pytest -q tests/test_pricing.py"
+```
+
+Expected result: `VERIFIED FIX`, a one-line change in `shop/pricing.py`, and all checks marked PASS.
+
+## 5. Run it on your own repository
+
+The repository must have at least one commit and a clean working tree.
+
+```bash
+cd /path/to/your/repo
+debug-agent config                                        # see the auto-detected commands
+debug-agent run --test "python -m pytest -q tests/test_orders.py"
+debug-agent run --issue "Discount codes apply twice after editing the basket"
+debug-agent run --issue-file bug.md --test "npm test -- orders.spec.ts"
+```
+
+Useful flags:
+
+- `--non-interactive`: auto-deny every human checkpoint (CI)
+- `--allow-dirty`: run despite uncommitted changes
+- `--model`: choose the model
+- `--config`: use a config file from outside the repo
+- `--quiet`: print only the final summary
+
+If your project uses its own virtualenv, either install debug-agent into it or point the commands at it. To do that, copy `.debug-agent.example.toml` to `<repo>/.debug-agent.toml` and set, for example, `test = ".venv/bin/python -m pytest -q {target}"`.
+
+## 6. Human checkpoints
+
+When the agent wants to deploy, migrate, read secrets, change infrastructure, install dependencies, run a destructive git/filesystem command, or run a binary that isn't on the allowlist, the run pauses:
+
+```
+HUMAN CHECKPOINT [secret_access]
+  Action: read config/.env
+  Why:    config/.env looks like a file that holds secrets
+Approve this action? [y/N]:
+```
+
+Anything other than `y` denies the action. The agent is told not to retry it or work around it.
+
+## 7. Reading the results
+
+Each run writes to `.debug-agent/runs/<timestamp>/`:
+
+| File | Contents |
+|---|---|
+| `summary.md` | Cause, changes, tests and checks, hypotheses, checkpoints, risks |
+| `patch.diff` | Every change made during the run |
+| `result.json` | Machine-readable result, for CI |
+| `transcript.jsonl` | Every model message and tool call, for auditing |
+
+The changes stay in your working tree and are never committed. Review them with `git diff`. To discard them, use `git checkout -- <files>`. To apply them to another checkout, run `git apply .debug-agent/runs/<ts>/patch.diff`. Add `.debug-agent/` to your `.gitignore`.
+
+Exit codes: `0` verified fix or verified no-change, `1` setup/usage error, `2` not verified, `3` blocked (needs a human).
+
+## 8. Troubleshooting
+
+| Message / symptom | Fix |
+|---|---|
+| `the working tree has uncommitted changes` | Commit or stash first, or pass `--allow-dirty` |
+| `the repository needs at least one commit` | Make an initial commit |
+| `ANTHROPIC_API_KEY is not set` | Export the key in the same shell |
+| `No test command configured` | Set `[commands].test` and `test_all` in `.debug-agent.toml` |
+| Prompts for routine tools, e.g. `bundle` or `rspec` | Add them to `[terminal].extra_allowed` |
+| Tests need an env var that looks secret | Add it to `[terminal].env_passthrough` |
+| `only intended files changed` fails | A command wrote files (formatter, snapshot, build output); gitignore the artifacts or let the agent revert them |
+| `change within size budget` fails | Raise `[limits].max_files_changed` / `max_lines_changed` if the larger fix is legitimate |
+| Lint/typecheck shows WARN, not FAIL | Those issues existed before the run and don't block the fix |
+| Commands time out | Raise `[limits].command_timeout`, or give the agent narrower test targets |
+
+## 9. CI (GitLab example)
+
+See the CI section in `README.md`. Always use `--non-interactive` in CI, and keep `.debug-agent/runs/` as a job artifact.
+__EOF__
+
 # ─────────────────────────────────────────────────────────────── package it
 tar -czf debug-agent.tar.gz "$ROOT"
 echo "Wrote ./$ROOT and ./debug-agent.tar.gz"
